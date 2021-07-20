@@ -28,9 +28,6 @@ class MainActivity : AppCompatActivity() {
                 studentItemAdapter.list2 = itemX
                 studentItemAdapter.notifyDataSetChanged()
             })
-
-            val addedStudent = Students("B","Akarekor Charles",28)
-            addStudentList(addedStudent)
         }
     }
 
