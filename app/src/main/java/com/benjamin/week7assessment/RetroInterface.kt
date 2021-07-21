@@ -9,5 +9,5 @@ interface RetroInterface {
     suspend fun getAllItems():List<Items>
 
     @POST("students")
-    suspend fun addStudentList(@Body post: Students):List<Students>
+   suspend fun addStudentList(@Body post: Students):List<Students>
 }

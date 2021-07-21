@@ -12,7 +12,7 @@ class MainViewModel:ViewModel() {
     val y: MutableLiveData<List<Items>> = MutableLiveData()
 
 
-    fun addStudentList(addStudents: Students){
+    fun addStudentList(){
         try{
             CoroutineScope(Dispatchers.IO).launch {
                 val studentX : List<Students> =
