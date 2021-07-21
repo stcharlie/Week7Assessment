@@ -28,7 +28,12 @@ class MainActivity : AppCompatActivity() {
                 studentItemAdapter.list2 = itemX
                 studentItemAdapter.notifyDataSetChanged()
             })
-            addStudentList()
+            binding.button.setOnClickListener {
+                viewModel.apply {
+                    addStudentList()
+                }
+            }
+
         }
     }
 
